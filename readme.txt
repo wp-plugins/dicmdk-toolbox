@@ -1,4 +1,4 @@
-=== Super Simple Anti Spam ===
+=== Dicm.dk - Toolbox ===
 Contributors: dicm.dk
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CWEYAQKSLPGWL
 Tags: antispam, spam, comment spam, security
