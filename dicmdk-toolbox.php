@@ -8,9 +8,14 @@ Author: Kim Vinberg - dicm.dk
 Author URI: http://dicm.dk
 License: 
 
-Copyright 2013 Kim Vinberg (email : info@dicm.dk)
+Free for personal use
 
 */
+$pluginDirUrl = plugin_dir_url( __FILE__ );
+ 
+include(dirname(__FILE__)."/functions.php");
+include(dirname(__FILE__)."/includes/downloadPlugin/downloadPlugin.php");
+
 
 
     ?>

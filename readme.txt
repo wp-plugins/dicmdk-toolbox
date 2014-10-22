@@ -1,18 +1,25 @@
 === Dicm.dk - Toolbox ===
 Contributors: dicm.dk
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CWEYAQKSLPGWL
-Tags: antispam, spam, comment spam, security
+Tags: toolbox, download plugin, plugin stealer
 Requires at least: 4.0
 Tested up to: 4.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Toolbox cleared. Working on a new version ( NO API KEY REQUIRED ) 
+Toolbox recently cleared, adding new updated functions.
 
 == Description ==
 
-Toolbox cleared. Working on a new version ( NO API KEY REQUIRED ) 
+Toolbox recently cleared, adding new updated functions.
+
+Tools:
+
+downloadPLugin: 
+v1.0.0 When browsing plugins in plugins.php you can now download the plugin, without FTP access. Now you can edit a plugin without having FTP information.
+
+
 
 == Installation ==
 
