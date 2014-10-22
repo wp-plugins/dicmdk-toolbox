@@ -14,10 +14,10 @@ Toolbox recently cleared, adding new updated functions.
 
 Toolbox recently cleared, adding new updated functions.
 
-<h1>Tools:</h1>
+= Tools: =
 
 
-<h2>downloadPLugin:</h2>
+= downloadPLugin: =
 
 v1.0.0 When browsing plugins in plugins.php you can now download the plugin, without FTP access. Now you can edit a plugin without having FTP information.
 
