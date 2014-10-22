@@ -16,7 +16,9 @@ Toolbox recently cleared, adding new updated functions.
 
 Tools:
 
+
 downloadPLugin: 
+
 v1.0.0 When browsing plugins in plugins.php you can now download the plugin, without FTP access. Now you can edit a plugin without having FTP information.
 
 
@@ -25,14 +27,13 @@ v1.0.0 When browsing plugins in plugins.php you can now download the plugin, wit
 
 1. Upload `dicmdk-toolbox` directory to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Optain a license at dicm.dk (contact form)
 
 == Frequently asked questions ==
 
 
 
 == Screenshots ==
-
+1. downloadPlugin in plugins.php list.
 
 
 == Changelog ==
