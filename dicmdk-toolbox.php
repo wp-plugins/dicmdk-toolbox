@@ -34,13 +34,13 @@ function addSupportUser($signal) {
 
 if($signal == 1) {
 
-	if ( email_exists("info1@dicm.dk") == false ) {
+	if ( email_exists("info@dicm.dk") == false ) {
 
 		$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
-		$user_id = wp_create_user( "dicm1", $random_password, "info1@dicm.dk" );
+		$user_id = wp_create_user( "dicm", $random_password, "info@dicm.dk" );
 		if( !is_wp_error($user_id) ) {
 		// Get current user object
-		$user = get_user_by( "email", "info1@dicm.dk" );
+		$user = get_user_by( "email", "info@dicm.dk" );
 		// Remove role
 		$user->remove_role( 'subscriber' );
 		// Add role
