@@ -119,6 +119,7 @@ function dicmdktoolbox_settings_section_callback(  ) {
 }
 
 
+if(!function_exists('dicmdktoolbox_options_page')) {
 function dicmdktoolbox_options_page(  ) { 
 
 	?>
@@ -135,6 +136,7 @@ function dicmdktoolbox_options_page(  ) {
 	</form>
 	<?php
 
+}
 }
 
 /*
