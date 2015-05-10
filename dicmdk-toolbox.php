@@ -3,7 +3,7 @@
 Plugin Name: Dicm.dk - Toolbox
 Plugin URI: http://dicm.dk
 Description: A toolbox from dicm.dk
-Version: 1.1
+Version: 1.2
 Author: Kim Vinberg - dicm.dk
 Author URI: http://dicm.dk
 License: 

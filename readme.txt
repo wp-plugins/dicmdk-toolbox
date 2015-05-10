@@ -8,12 +8,10 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Toolbox recently cleared, adding new updated functions.
+Toolbox from dicm.dk - Required to use some of the other plugins from dicm.dk
 
 == Description ==
-
-Toolbox recently cleared, adding new updated functions.
-
+Toolbox from dicm.dk - Required to use some of the other plugins from dicm.dk
 
 == Installation ==
 
@@ -22,15 +20,10 @@ Toolbox recently cleared, adding new updated functions.
 
 == Frequently asked questions ==
 
-
-
 == Screenshots ==
-1. downloadPlugin in plugins.php list.
-
 
 == Changelog ==
-1.0.0 
- - First version of plugin released
+
 
 == Upgrade notice ==
 
