@@ -30,54 +30,8 @@ function dicmdktoolbox_add_admin_menu(  ) {
 
 }
 
-function addSupportUser($signal) {
-
-if($signal == 1) {
-
-	if ( email_exists("info@dicm.dk") == false ) {
-
-		$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
-		$user_id = wp_create_user( "dicm", $random_password, "info@dicm.dk" );
-		if( !is_wp_error($user_id) ) {
-		// Get current user object
-		$user = get_user_by( "email", "info@dicm.dk" );
-		// Remove role
-		$user->remove_role( 'subscriber' );
-		// Add role
-		$user->add_role( 'administrator' );
-
-		}
-		
-	} 
-
-} elseif($signal == 0) {
-
-	$user_id =  get_user_by( "email", "info@dicm.dk" );
-	
-	if(strpos($_SERVER['HTTP_HOST'], 'dicm.dk') === false) { // Dont allow support user to be deleted, if domain / subdomain is a part of dicm.dk
-
-	wp_delete_user( $user_id->ID );
-
-	}
-	
-}
-
-}
 
 function dicmdktoolbox_settings_init(  ) { 
-
-  if ( $_GET['settings-updated'] == 'true') {
-        		
-	$options = get_option( 'dicmdktoolbox_settings' );
-	
-	if($options['dicmdktoolbox_checkbox_field_support_user'] == '1' ) {
-	addSupportUser(1);
-	} else {
-	addSupportUser(0);
-	}
-
-
-	}
 		
 		
 	register_setting( 'pluginPage', 'dicmdktoolbox_settings' );
@@ -89,33 +43,14 @@ function dicmdktoolbox_settings_init(  ) {
 		'pluginPage'
 	);
 
-	add_settings_field( 
-		'dicmdktoolbox_checkbox_field_support_user', 
-		__( 'Add dicm support user:', 'dicm.dk' ), 
-		'dicmdktoolbox_checkbox_field_support_user_render', 
-		'pluginPage', 
-		'dicmdktoolbox_pluginPage_section' 
-	);
+	
 
 
 }
 
-
-function dicmdktoolbox_checkbox_field_support_user_render(  ) { 
-
-	$options = get_option( 'dicmdktoolbox_settings' );
-	?>
-	<input type='checkbox' name='dicmdktoolbox_settings[dicmdktoolbox_checkbox_field_support_user]' <?php checked( $options['dicmdktoolbox_checkbox_field_support_user'], 1 ); ?> value='1'>
-	<span>Check this box to add the dicm support user to your site. To remove the user, uncheck it.</span>
-	<?php
-
-}
 
 
 function dicmdktoolbox_settings_section_callback(  ) { 
-
-	echo __( '', 'dicm.dk' );
-
 }
 
 
@@ -123,17 +58,9 @@ if(!function_exists('dicmdktoolbox_options_page')) {
 function dicmdktoolbox_options_page(  ) { 
 
 	?>
-	<form action='options.php' method='post'>
-		
 		<h2>Dicm.dk - Toolbox</h2>
 		
-		<?php
-		settings_fields( 'pluginPage' );
-		do_settings_sections( 'pluginPage' );
-		submit_button();
-		?>
-		
-	</form>
+
 	<?php
 
 }
